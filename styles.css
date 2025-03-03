@@ -156,13 +156,3 @@ button:hover {
 .hidden {
     display: none;
 }
-.footer-text {
-  font-size: 12px; /* Yazı boyutunu küçültür */
-  color: #555; /* Yazı rengini gri yapar */
-  text-align: center; /* Yazıyı ortalar */
-  margin-top: 20px; /* Üstten boşluk ekler */
-  font-style: italic; /* Yazıyı italik yapar */
-  background-color: #f9f9f9; /* Arka plan rengini açık gri yapar */
-  padding: 10px; /* İç boşluk ekler */
-  border-top: 1px solid #ddd; /* Üst kenara ince bir çizgi ekler */
-}
