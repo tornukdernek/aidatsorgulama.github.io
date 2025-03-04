@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .social-media a {
+            color: inherit;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .social-media a .fab {
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-media a:hover .fab {
+            color: #3b5998; /* Facebook rengi */
+        }
+        .social-media a[href*="twitter"] .fab {
+            color: #1da1f2; /* Twitter rengi */
+        }
+        .social-media a[href*="instagram"] .fab {
+            color: #e1306c; /* Instagram rengi */
+        }
+    </style>
 </head>
 <body>
     <div class="background-logo"></div>
