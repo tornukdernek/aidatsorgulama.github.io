@@ -11,8 +11,12 @@
             background-color: #f0f8ff;
             color: #333;
         }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         h1 {
-            text-align: center;
             color: #0056b3;
         }
         table {
@@ -57,14 +61,13 @@
         .back-button {
             display: inline-block;
             padding: 10px 20px;
-            margin-bottom: 20px;
             font-size: 16px;
             color: white;
             background-color: #0056b3;
             border: none;
             border-radius: 5px;
             text-decoration: none;
-            text-align: center;
+           ;
             transition: background-color 0.3s;
         }
         .back-button:hover {
@@ -76,8 +79,10 @@
     <div class="marquee">
         <span>Dernek lokalimizin alımında verdiğiniz destekler için teşekkür ederiz.</span>
     </div>
-    <a href="index.html" class="back-button">Geri Dön</a>
-    <h1>Bağış Listesi</h1>
+    <div class="header">
+        <h1>Bağış Listesi</h1>
+        <a href="index.html" class="back-button">Geri Dön</a>
+    </div>
     <table>
         <thead>
             <tr>
