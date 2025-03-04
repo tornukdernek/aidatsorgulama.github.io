@@ -13,11 +13,12 @@
         }
         .header {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
         }
         h1 {
             color: #0056b3;
+            margin-left: 20px;
         }
         table {
             width: 100%;
@@ -67,9 +68,9 @@
             border: none;
             border-radius: 5px;
             text-decoration: none;
-            margin-left: auto;
-           ;
+            text-align: center;
             transition: background-color 0.3s;
+            margin-right: 20px; /* Butonu sola hizalar */
         }
         .back-button:hover {
             background-color: #003d80;
@@ -81,8 +82,8 @@
         <span>Dernek lokalimizin alımında verdiğiniz destekler için teşekkür ederiz.</span>
     </div>
     <div class="header">
-        <h1>Bağış Listesi</h1>
         <a href="index.html" class="back-button">Geri Dön</a>
+        <h1>Bağış Listesi</h1>
     </div>
     <table>
         <thead>
