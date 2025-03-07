@@ -38,22 +38,6 @@ function showLoadingAndRedirect() {
     }, 2000); // 2 saniye sonra yönlendir
 }
 
-function showLoadingAndRedirect() {
-    document.getElementById('button1').classList.remove('hidden');
-    setTimeout(() => {
-        document.getElementById('button1').classList.add('hidden');
-        window.location.href = 'Aktif.html';
-    }, 2000); // 2 saniye sonra yönlendir
-}
-
-function showLoadingAndRedirect() {
-    document.getElementById('button2').classList.remove('hidden');
-    setTimeout(() => {
-        document.getElementById('button2').classList.add('hidden');
-        window.location.href = 'Pasif.html';
-    }, 2000); // 2 saniye sonra yönlendir
-}
-
 function showError() {
     const errorMessage = document.getElementById('error-message');
     errorMessage.classList.remove('hidden');
