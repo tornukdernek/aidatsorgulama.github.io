@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bağış Verenler Listesi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        h1 {
+            color: #0056b3;
+            margin-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #0056b3;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #e6f2ff;
+        }
+        tr:hover {
+            background-color: #d1e7ff;
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #0056b3;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+            margin-right: 20px; /* Butonu sola hizalar */
+        }
+        .back-button:hover {
+            background-color: #003d80;
+        }
+    </style>
+</head>
+<body>    <div class="header">
+        <a href="index.html" class="back-button">Geri Dön</a>
+        <h1>Pasif Üye Listesi</h1>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>İsim</th>
+            </tr>
+        </thead>
+        <tbody>
+               <tr><td>Mehmet İleri</td></tr>
+    <tr><td>Hamza Kaya</td></tr>
+    <tr><td>Atakan Temel</td></tr>
+    <tr><td>Selami Kara</td></tr>
+    <tr><td>Engin Ata</td></tr>
+    <tr><td>Bayram Boz</td></tr>
+    <tr><td>Mete Çak</td></tr>
+    <tr><td>Bahri Çak</td></tr>
+    <tr><td>Coşkun Çakar</td></tr>
+    <tr><td>Bahattin Çakar</td></tr>
+    <tr><td>Hakkı Kara</td></tr>
+    <tr><td>Yasin Kozlu</td></tr>
+    <tr><td>Muammer Meral</td></tr>
+    <tr><td>Zeki Soylu</td></tr>
+    <tr><td>Cengiz Soylu</td></tr>
+    <tr><td>Sait Temel</td></tr>
+    <tr><td>Mehmet Akif Ten</td></tr>
+    <tr><td>Habibullah Uzun</td></tr>
+    <tr><td>Sabri Ten</td></tr>
+    <tr><td>Bahtiyar Temel</td></tr>
+    <tr><td>Turgut Şahin</td></tr>
+    <tr><td>Muzaffer Güldalı</td></tr>
+    <tr><td>Zaim Karahan</td></tr>
+    <tr><td>Ahmet Soylu</td></tr>
+    <tr><td>Nurettin Çak</td></tr>
+    <tr><td>Soner Çakar</td></tr>
+    <tr><td>İlhan Civelek</td></tr>
+    <tr><td>Zekayi Germiç</td></tr>
+    <tr><td>Zafer (Mustafa Boz) Sağır</td></tr>
+    <tr><td>İlyas Temel</td></tr>
+    <tr><td>Saffet Uzun</td></tr>
+    <tr><td>Habil Kozlu</td></tr>
+    <tr><td>Klima</td></tr>
+    <tr><td>Eftal Kozlu</td></tr>
+    <tr><td>Murat Ten</td></tr>
+    <tr><td>Murat Kaya</td></tr>
+    <tr><td>Erdoğan Şahin</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>
