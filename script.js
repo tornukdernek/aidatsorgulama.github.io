@@ -39,17 +39,17 @@ function showLoadingAndRedirect() {
 }
 
 function showLoadingAndRedirect() {
-    document.getElementById('loading-message').classList.remove('hidden');
+    document.getElementById('button1').classList.remove('hidden');
     setTimeout(() => {
-        document.getElementById('loading-message').classList.add('hidden');
+        document.getElementById('button1').classList.add('hidden');
         window.location.href = 'Aktif.html';
     }, 2000); // 2 saniye sonra yönlendir
 }
 
 function showLoadingAndRedirect() {
-    document.getElementById('loading-message').classList.remove('hidden');
+    document.getElementById('button2').classList.remove('hidden');
     setTimeout(() => {
-        document.getElementById('loading-message').classList.add('hidden');
+        document.getElementById('button2').classList.add('hidden');
         window.location.href = 'Pasif.html';
     }, 2000); // 2 saniye sonra yönlendir
 }
