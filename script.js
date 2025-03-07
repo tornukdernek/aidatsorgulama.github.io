@@ -30,19 +30,17 @@ function getMemberInfo() {
         });
 }
 
-function showLoadingAndRedirect() {
+function showLoadingAndRedirect(type) {
     document.getElementById('loading-message').classList.remove('hidden');
     setTimeout(() => {
         document.getElementById('loading-message').classList.add('hidden');
-        window.location.href = 'bagis.html';
-    }, 2000); // 2 saniye sonra yönlendir
-}
-
-function showLoadingAndRedirect() {
-    document.getElementById('button1').classList.remove('hidden');
-    setTimeout(() => {
-        document.getElementById('button1').classList.add('hidden');
-        window.location.href = 'Aktif.html';
+        if (type === 'aktif') {
+            window.location.href = 'Aktif.html'; // Aktif Üye Listesi sayfasına yönlendirme
+        } else if (type === 'pasif') {
+            window.location.href = 'Pasif.html'; // Pasif Üye Listesi sayfasına yönlendirme
+        } else if (type === 'bagis') {
+            window.location.href = 'bagis.html'; // Bağış sayfasına yönlendirme
+        }
     }, 2000); // 2 saniye sonra yönlendir
 }
 
