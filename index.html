@@ -1,4 +1,4 @@
-en<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -46,11 +46,11 @@ en<!DOCTYPE html>
 </head>
 <body>
     <!--OnlineZiyaretci kodu baslangici-->
-<script language="JavaScript" type="text/javascript" src="https://srv10.webtemsilcisi.com/counter.php?accDomainId=867d76a1468299a01b7bc4537b339550"></script>
-<noscript>
-<a href="http://www.webtemsilcisi.com">Online Ziyaretci Sayacı</a>
-</noscript>
-<!--OnlineZiyaretci kodu sonu-->
+    <script language="JavaScript" type="text/javascript" src="https://srv10.webtemsilcisi.com/counter.php?accDomainId=867d76a1468299a01b7bc4537b339550"></script>
+    <noscript>
+        <a href="http://www.webtemsilcisi.com">Online Ziyaretci Sayacı</a>
+    </noscript>
+    <!--OnlineZiyaretci kodu sonu-->
     <div class="background-logo"></div>
     <div class="container">
         <h1>Üye Bilgileri</h1>
@@ -60,10 +60,12 @@ en<!DOCTYPE html>
             <button type="submit">Bilgileri Getir</button>
             <button type="button" onclick="showLoadingAndRedirect('bagis')">Bağış Verenler Listesi</button>
             <button type="button" onclick="showLoadingAndRedirect('aktif')">Aktif Üye Listesi</button>
-<button type="button" onclick="showLoadingAndRedirect('pasif')">Pasif Üye Listesi</button>
-<div id="loading-message" class="hidden">
-            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2h5MzV0d3g3MmY1bHk4azZybXlieHBtbTk5dXBvMHN4Zm9ydWtrdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/af6IXN5Yttush6P5KM/giphy.gif" alt="Yükleniyor...">
-        </div>
+            <button type="button" onclick="showLoadingAndRedirect('pasif')">Pasif Üye Listesi</button>
+            <div id="loading-message" class="hidden">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2h5MzV0d3g3MmY1bHk4azZybXlieHBtbTk5dXBvMHN4Zm9ydWtrdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/af6IXN5Yttush6P5KM/giphy.gif" alt="Yükleniyor...">
+            </div>
+            <!-- Ana ekrana ekleme butonu -->
+            <button id="installButton" style="display: none;">Ana Ekrana Ekle</button>
         </form>
         <div id="uyeBilgileri">
             <p><strong>Ad:</strong> <span id="ad"></span></p>
@@ -91,6 +93,28 @@ en<!DOCTYPE html>
             <p>&copy; Tasarım ve Kodlama Oğuzhan Şahin tarafından yapılmıştır. Tüm hakları saklıdır.</p>
         </div>
     </footer>
+    <script>
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('installButton').style.display = 'block';
+        });
+
+        document.getElementById('installButton').addEventListener('click', () => {
+            document.getElementById('installButton').style.display = 'none';
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('User accepted the A2HS prompt');
+                } else {
+                    console.log('User dismissed the A2HS prompt');
+                }
+                deferredPrompt = null;
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
